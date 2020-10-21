@@ -1,11 +1,19 @@
 import React from "react";
 import "./App.css";
-import Lights from "./components/Lights/Lights";
+import Data from "./components/Data";
+import Header from "./components/Header";
+// import Lights from "./components/Lights/Lights";
 
 function App() {
   return (
     <>
-      <Lights />
+      <main className="main--container">
+        <section className="container">
+          <Header />
+          <Data />
+        </section>
+      </main>
+      {/* <Lights /> */}
     </>
   );
 }

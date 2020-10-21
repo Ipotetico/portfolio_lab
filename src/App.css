@@ -156,4 +156,181 @@ table {
       justify-self: center;
   border-radius: 50%;
 }
+
+.header--container {
+  width: 100%;
+  height: 960px;
+  overflow: hidden;
+  background-image: url(./img/Home-Hero-Image.jpg);
+  background-position: -19.5vw 0%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-repeat: no-repeat;
+}
+
+.header {
+  width: 100%;
+  height: 960px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  overflow: hidden;
+}
+
+.header .header--box {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 10% 10% 80%;
+      grid-template-rows: 10% 10% 80%;
+}
+
+.header .header--box .one--row {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1.5fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.header .header--box .central--box {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 45% 10% 45%;
+      grid-template-rows: 45% 10% 45%;
+}
+
+.header .header--box .central--box h1 {
+  font-family: "Open Sans", sans-serif;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  font-size: 2.5vh;
+}
+
+.header .header--box .central--box img {
+  width: 25vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: #737373;
+  font-family: "Open Sans", sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 0.7vh 1vh;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+a.login {
+  font-size: 0.8vh;
+}
+
+a.login:hover {
+  border: 2px solid #fad648;
+}
+
+a.menu {
+  font-size: 1.1vh;
+  color: #3c3c3c;
+}
+
+a.menu:hover {
+  border: 1px solid #3c3c3c;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+}
+
+.main--container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.main--container .container {
+  width: 60vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: none;
+  overflow: hidden;
+}
+
+.data {
+  width: 100%;
+  height: 385px;
+  background-color: #fad648;
+  background-image: url(../src/img/tlo_papier.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.data img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
 /*# sourceMappingURL=App.css.map */

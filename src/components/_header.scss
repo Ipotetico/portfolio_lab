@@ -1,0 +1,84 @@
+.header--container {
+  width: 100%;
+  height: 960px;
+  overflow: hidden;
+  background-image: url(./img/Home-Hero-Image.jpg);
+  background-position: -19.5vw 0%;
+  transform: scale(1);
+  background-repeat: no-repeat;
+}
+
+.header {
+  width: 100%;
+  height: 960px;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+
+  .header--box {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10% 80%;
+
+    .one--row {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    .central--box {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 45% 10% 45%;
+
+      h1 {
+        font-family: $sansserif;
+        align-self: flex-end;
+        justify-self: center;
+        text-align: center;
+        font-size: 2.5vh;
+      }
+
+      img {
+        width: 25vw;
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+}
+
+a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $lab_grey;
+  font-family: $sansserif;
+  align-self: center;
+  justify-self: center;
+  padding: 0.7vh 1vh;
+  transition: 0.5s;
+  border: 1px solid rgba($color: white, $alpha: 0);
+
+  &.login {
+    font-size: 0.8vh;
+
+    &:hover {
+      border: 2px solid $lab_yellow;
+    }
+  }
+
+  &.menu {
+    font-size: 1.1vh;
+    color: $lab_darkGrey;
+    &:hover {
+      border: 1px solid $lab_darkGrey;
+    }
+  }
+}
