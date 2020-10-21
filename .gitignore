@@ -10,6 +10,7 @@
 
 # production
 /build
+/TRASH
 
 # misc
 .DS_Store
