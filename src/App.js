@@ -8,11 +8,10 @@ function App() {
   return (
     <>
       <main className="main--container">
-        <section className="container">
-          <Header />
-          <Data />
-        </section>
+        <Header />
+        <Data />
       </main>
+
       {/* <Lights /> */}
     </>
   );

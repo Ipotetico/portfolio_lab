@@ -6,9 +6,11 @@ import zbiorki from "../img/7_zbiorek.svg";
 const Data = () => {
   return (
     <div className="data">
-      <img src={worki} alt="10 workow" />
-      <img src={organizacje} alt="5 organizacji" />
-      <img src={zbiorki} alt="7 zbiórek" />
+      <div className="data--container">
+        <img src={worki} alt="10 workow" />
+        <img src={organizacje} alt="5 organizacji" />
+        <img src={zbiorki} alt="7 zbiórek" />
+      </div>
     </div>
   );
 };
