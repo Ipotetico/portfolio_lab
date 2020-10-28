@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio_lab/static/css/main.876c23ff.chunk.css",
-    "main.js": "/portfolio_lab/static/js/main.cdd8e70e.chunk.js",
-    "main.js.map": "/portfolio_lab/static/js/main.cdd8e70e.chunk.js.map",
+    "main.css": "/portfolio_lab/static/css/main.c3870cc4.chunk.css",
+    "main.js": "/portfolio_lab/static/js/main.c67c8192.chunk.js",
+    "main.js.map": "/portfolio_lab/static/js/main.c67c8192.chunk.js.map",
     "runtime-main.js": "/portfolio_lab/static/js/runtime-main.e5ed9f55.js",
     "runtime-main.js.map": "/portfolio_lab/static/js/runtime-main.e5ed9f55.js.map",
-    "static/js/2.5e3cd52e.chunk.js": "/portfolio_lab/static/js/2.5e3cd52e.chunk.js",
-    "static/js/2.5e3cd52e.chunk.js.map": "/portfolio_lab/static/js/2.5e3cd52e.chunk.js.map",
+    "static/js/2.a3c40d07.chunk.js": "/portfolio_lab/static/js/2.a3c40d07.chunk.js",
+    "static/js/2.a3c40d07.chunk.js.map": "/portfolio_lab/static/js/2.a3c40d07.chunk.js.map",
     "index.html": "/portfolio_lab/index.html",
-    "precache-manifest.5d4761cb9243f7e5a0994ff48b1098c4.js": "/portfolio_lab/precache-manifest.5d4761cb9243f7e5a0994ff48b1098c4.js",
+    "precache-manifest.9b2e64629621aafe1cebbf6c5b1bf100.js": "/portfolio_lab/precache-manifest.9b2e64629621aafe1cebbf6c5b1bf100.js",
     "service-worker.js": "/portfolio_lab/service-worker.js",
-    "static/css/main.876c23ff.chunk.css.map": "/portfolio_lab/static/css/main.876c23ff.chunk.css.map",
-    "static/js/2.5e3cd52e.chunk.js.LICENSE.txt": "/portfolio_lab/static/js/2.5e3cd52e.chunk.js.LICENSE.txt",
-    "static/media/10_workow.svg": "/portfolio_lab/static/media/10_workow.d5346df0.svg",
-    "static/media/5_organizacji.svg": "/portfolio_lab/static/media/5_organizacji.394aa462.svg",
-    "static/media/7_zbiorek.svg": "/portfolio_lab/static/media/7_zbiorek.20183408.svg",
-    "static/media/Home-Hero-Image.jpg": "/portfolio_lab/static/media/Home-Hero-Image.e99903ed.jpg",
+    "static/css/main.c3870cc4.chunk.css.map": "/portfolio_lab/static/css/main.c3870cc4.chunk.css.map",
+    "static/js/2.a3c40d07.chunk.js.LICENSE.txt": "/portfolio_lab/static/js/2.a3c40d07.chunk.js.LICENSE.txt",
+    "static/media/kurier.svg": "/portfolio_lab/static/media/kurier.85363494.svg",
+    "static/media/misio_sam_mobile.png": "/portfolio_lab/static/media/misio_sam_mobile.51b52643.png",
     "static/media/parzenica.svg": "/portfolio_lab/static/media/parzenica.8b154201.svg",
-    "static/media/App.css": "/portfolio_lab/static/media/tlo_papier.af825e1d.png"
+    "static/media/spakuj.svg": "/portfolio_lab/static/media/spakuj.ff0bea94.svg",
+    "static/media/wybierz_rzeczy.svg": "/portfolio_lab/static/media/wybierz_rzeczy.cbce7df0.svg",
+    "static/media/zdecyduj.svg": "/portfolio_lab/static/media/zdecyduj.6eae46ef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e5ed9f55.js",
-    "static/js/2.5e3cd52e.chunk.js",
-    "static/css/main.876c23ff.chunk.css",
-    "static/js/main.cdd8e70e.chunk.js"
+    "static/js/2.a3c40d07.chunk.js",
+    "static/css/main.c3870cc4.chunk.css",
+    "static/js/main.c67c8192.chunk.js"
   ]
 }
