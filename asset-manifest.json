@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio_lab/static/css/main.0354d464.chunk.css",
-    "main.js": "/portfolio_lab/static/js/main.4f46f262.chunk.js",
-    "main.js.map": "/portfolio_lab/static/js/main.4f46f262.chunk.js.map",
+    "main.css": "/portfolio_lab/static/css/main.2d1602ac.chunk.css",
+    "main.js": "/portfolio_lab/static/js/main.e3e66bce.chunk.js",
+    "main.js.map": "/portfolio_lab/static/js/main.e3e66bce.chunk.js.map",
     "runtime-main.js": "/portfolio_lab/static/js/runtime-main.e5ed9f55.js",
     "runtime-main.js.map": "/portfolio_lab/static/js/runtime-main.e5ed9f55.js.map",
-    "static/js/2.0343927d.chunk.js": "/portfolio_lab/static/js/2.0343927d.chunk.js",
-    "static/js/2.0343927d.chunk.js.map": "/portfolio_lab/static/js/2.0343927d.chunk.js.map",
+    "static/js/2.62db0021.chunk.js": "/portfolio_lab/static/js/2.62db0021.chunk.js",
+    "static/js/2.62db0021.chunk.js.map": "/portfolio_lab/static/js/2.62db0021.chunk.js.map",
     "index.html": "/portfolio_lab/index.html",
-    "precache-manifest.064dbf6899f6d05b8748ab458e926a9c.js": "/portfolio_lab/precache-manifest.064dbf6899f6d05b8748ab458e926a9c.js",
+    "precache-manifest.36bccd0b450c367de2fe1fdf0bedca1e.js": "/portfolio_lab/precache-manifest.36bccd0b450c367de2fe1fdf0bedca1e.js",
     "service-worker.js": "/portfolio_lab/service-worker.js",
-    "static/css/main.0354d464.chunk.css.map": "/portfolio_lab/static/css/main.0354d464.chunk.css.map",
-    "static/js/2.0343927d.chunk.js.LICENSE.txt": "/portfolio_lab/static/js/2.0343927d.chunk.js.LICENSE.txt",
+    "static/css/main.2d1602ac.chunk.css.map": "/portfolio_lab/static/css/main.2d1602ac.chunk.css.map",
+    "static/js/2.62db0021.chunk.js.LICENSE.txt": "/portfolio_lab/static/js/2.62db0021.chunk.js.LICENSE.txt",
     "static/media/fundacje.svg": "/portfolio_lab/static/media/fundacje.d6bb68b9.svg",
     "static/media/kurier.svg": "/portfolio_lab/static/media/kurier.c6169f16.svg",
     "static/media/lokalsi.svg": "/portfolio_lab/static/media/lokalsi.e4d0ee0e.svg",
     "static/media/misio_sam_mobile.png": "/portfolio_lab/static/media/misio_sam_mobile.51b52643.png",
     "static/media/ngo.svg": "/portfolio_lab/static/media/ngo.f524127c.svg",
-    "static/media/parzenica.svg": "/portfolio_lab/static/media/parzenica.8b154201.svg",
+    "static/media/App.css": "/portfolio_lab/static/media/parzenica.8b154201.svg",
     "static/media/spakuj.svg": "/portfolio_lab/static/media/spakuj.d6ecd522.svg",
     "static/media/wybierz_rzeczy.svg": "/portfolio_lab/static/media/wybierz_rzeczy.397ec028.svg",
     "static/media/zdecyduj.svg": "/portfolio_lab/static/media/zdecyduj.f8addac9.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e5ed9f55.js",
-    "static/js/2.0343927d.chunk.js",
-    "static/css/main.0354d464.chunk.css",
-    "static/js/main.4f46f262.chunk.js"
+    "static/js/2.62db0021.chunk.js",
+    "static/css/main.2d1602ac.chunk.css",
+    "static/js/main.e3e66bce.chunk.js"
   ]
 }
