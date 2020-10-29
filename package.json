@@ -11,9 +11,12 @@
     "easy-peasy": "^4.0.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-elastic-carousel": "^0.9.1",
+    "react-media": "^1.10.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.4",
-    "react-scroll": "^1.8.1"
+    "react-scroll": "^1.8.1",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "predeploy": "npm run build",
