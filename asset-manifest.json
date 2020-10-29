@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio_lab/static/css/main.63a6de05.chunk.css",
-    "main.js": "/portfolio_lab/static/js/main.8b699d55.chunk.js",
-    "main.js.map": "/portfolio_lab/static/js/main.8b699d55.chunk.js.map",
+    "main.css": "/portfolio_lab/static/css/main.94e9fdf5.chunk.css",
+    "main.js": "/portfolio_lab/static/js/main.22774375.chunk.js",
+    "main.js.map": "/portfolio_lab/static/js/main.22774375.chunk.js.map",
     "runtime-main.js": "/portfolio_lab/static/js/runtime-main.e5ed9f55.js",
     "runtime-main.js.map": "/portfolio_lab/static/js/runtime-main.e5ed9f55.js.map",
     "static/js/2.56eb2d3d.chunk.js": "/portfolio_lab/static/js/2.56eb2d3d.chunk.js",
     "static/js/2.56eb2d3d.chunk.js.map": "/portfolio_lab/static/js/2.56eb2d3d.chunk.js.map",
     "index.html": "/portfolio_lab/index.html",
-    "precache-manifest.db2178d1b951312f1ef6ddb029baca6e.js": "/portfolio_lab/precache-manifest.db2178d1b951312f1ef6ddb029baca6e.js",
+    "precache-manifest.03ee0dde1460e3644f534aeada029fa9.js": "/portfolio_lab/precache-manifest.03ee0dde1460e3644f534aeada029fa9.js",
     "service-worker.js": "/portfolio_lab/service-worker.js",
-    "static/css/main.63a6de05.chunk.css.map": "/portfolio_lab/static/css/main.63a6de05.chunk.css.map",
+    "static/css/main.94e9fdf5.chunk.css.map": "/portfolio_lab/static/css/main.94e9fdf5.chunk.css.map",
     "static/js/2.56eb2d3d.chunk.js.LICENSE.txt": "/portfolio_lab/static/js/2.56eb2d3d.chunk.js.LICENSE.txt",
     "static/media/fb.svg": "/portfolio_lab/static/media/fb.5291b281.svg",
     "static/media/fundacje.svg": "/portfolio_lab/static/media/fundacje.d6bb68b9.svg",
     "static/media/ig.svg": "/portfolio_lab/static/media/ig.82b82a61.svg",
-    "static/media/kurier.svg": "/portfolio_lab/static/media/kurier.c6169f16.svg",
+    "static/media/kurier.svg": "/portfolio_lab/static/media/kurier.5fdd418f.svg",
     "static/media/lokalsi.svg": "/portfolio_lab/static/media/lokalsi.e4d0ee0e.svg",
     "static/media/mail.svg": "/portfolio_lab/static/media/mail.425d2435.svg",
     "static/media/misio_sam_mobile.png": "/portfolio_lab/static/media/misio_sam_mobile.51b52643.png",
@@ -23,15 +23,15 @@
     "static/media/App.css": "/portfolio_lab/static/media/parzenica.8b154201.svg",
     "static/media/parzenica_white.svg": "/portfolio_lab/static/media/parzenica_white.0aca6904.svg",
     "static/media/phone.svg": "/portfolio_lab/static/media/phone.133070c1.svg",
-    "static/media/spakuj.svg": "/portfolio_lab/static/media/spakuj.d6ecd522.svg",
+    "static/media/spakuj.svg": "/portfolio_lab/static/media/spakuj.5a5dc4f6.svg",
     "static/media/twitter.svg": "/portfolio_lab/static/media/twitter.c03abfc1.svg",
-    "static/media/wybierz_rzeczy.svg": "/portfolio_lab/static/media/wybierz_rzeczy.397ec028.svg",
-    "static/media/zdecyduj.svg": "/portfolio_lab/static/media/zdecyduj.f8addac9.svg"
+    "static/media/wybierz_rzeczy.svg": "/portfolio_lab/static/media/wybierz_rzeczy.0f1cc0e5.svg",
+    "static/media/zdecyduj.svg": "/portfolio_lab/static/media/zdecyduj.40431237.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e5ed9f55.js",
     "static/js/2.56eb2d3d.chunk.js",
-    "static/css/main.63a6de05.chunk.css",
-    "static/js/main.8b699d55.chunk.js"
+    "static/css/main.94e9fdf5.chunk.css",
+    "static/js/main.22774375.chunk.js"
   ]
 }

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e8d9d2e3d651b4d7e261d70a1a3def8a",
+    "revision": "b9b489ebfcd4be2c596fe47fe559a686",
     "url": "/portfolio_lab/index.html"
   },
   {
-    "revision": "1abbea083ff32883dcc7",
-    "url": "/portfolio_lab/static/css/main.63a6de05.chunk.css"
+    "revision": "4b75f948f5d64b105cb5",
+    "url": "/portfolio_lab/static/css/main.94e9fdf5.chunk.css"
   },
   {
     "revision": "1488daf76fe13e4c7e03",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio_lab/static/js/2.56eb2d3d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1abbea083ff32883dcc7",
-    "url": "/portfolio_lab/static/js/main.8b699d55.chunk.js"
+    "revision": "4b75f948f5d64b105cb5",
+    "url": "/portfolio_lab/static/js/main.22774375.chunk.js"
   },
   {
     "revision": "a4f626bb41c890834981",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio_lab/static/media/ig.82b82a61.svg"
   },
   {
-    "revision": "c6169f160951a683afafc5faa3b461a6",
-    "url": "/portfolio_lab/static/media/kurier.c6169f16.svg"
+    "revision": "5fdd418f37dfbb562e0e0f550137dfcc",
+    "url": "/portfolio_lab/static/media/kurier.5fdd418f.svg"
   },
   {
     "revision": "e4d0ee0e5840477683dc3a2bacaa27a4",
@@ -68,19 +68,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio_lab/static/media/phone.133070c1.svg"
   },
   {
-    "revision": "d6ecd522272681f86b51e3472927d720",
-    "url": "/portfolio_lab/static/media/spakuj.d6ecd522.svg"
+    "revision": "5a5dc4f62a6cf575b3c89537fc588d34",
+    "url": "/portfolio_lab/static/media/spakuj.5a5dc4f6.svg"
   },
   {
     "revision": "c03abfc14d3e6eb54a0195d27a5881c6",
     "url": "/portfolio_lab/static/media/twitter.c03abfc1.svg"
   },
   {
-    "revision": "397ec02879388363f910109e17100d85",
-    "url": "/portfolio_lab/static/media/wybierz_rzeczy.397ec028.svg"
+    "revision": "0f1cc0e583450d773713e6749fbbe3ef",
+    "url": "/portfolio_lab/static/media/wybierz_rzeczy.0f1cc0e5.svg"
   },
   {
-    "revision": "f8addac98cb780e53acefc2d7cb5e2ee",
-    "url": "/portfolio_lab/static/media/zdecyduj.f8addac9.svg"
+    "revision": "40431237ed96d37d828096aefe581e4b",
+    "url": "/portfolio_lab/static/media/zdecyduj.40431237.svg"
   }
 ]);
