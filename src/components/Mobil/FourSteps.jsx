@@ -11,7 +11,8 @@ const FourSteps = () => {
   return (
     <>
       <div className="container carousel">
-        <h2>Wystarczą 4 proste kroki</h2>
+        <img src={parzenica} alt="" />
+        <button className="button">Wystarczą 4 proste kroki</button>
         <img src={parzenica} alt="" />
         <div className="four--steps">
           <div className=""></div>

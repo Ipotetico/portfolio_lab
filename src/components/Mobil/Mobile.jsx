@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Collection from "./Collection";
+import Contact from "./Contact";
 import FourSteps from "./FourSteps";
 import HeaderMobile from "./HeaderMobile";
 import Help from "./Help";
@@ -19,6 +21,8 @@ const Mobile = () => {
       <OpenAccount />
       <FourSteps />
       <Help />
+      <Collection />
+      <Contact />
     </>
   );
 };

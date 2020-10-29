@@ -19,7 +19,7 @@ body {
     height: 150px;
     background-color: #eeede9;
     display: grid;
-    grid-template-columns: 25% 1fr 15%;
+    grid-template-columns: 35% 1fr 15%;
     grid-template-rows: 1fr;
   }
   .box {
@@ -123,10 +123,10 @@ body {
   &.carousel {
     height: 100vw;
     background-color: $lab_white;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% 5% 1fr;
     margin-bottom: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h2 {
       text-align: center;
@@ -142,19 +142,36 @@ body {
     }
 
     .four--steps {
+      margin-top: 6vw;
       box-sizing: border-box;
-      height: 300px;
-      max-height: 300px;
+      height: 50%;
+      max-height: 50%;
+      display: flex;
+      align-items: center;
       background-color: $lab_white;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      padding: 7vw;
+      padding: 4vw;
 
       .icon {
         max-width: 80%;
         max-height: 80%;
         cursor: pointer;
+      }
+    }
+
+    .button {
+      width: 70vw;
+      height: 12vw;
+      background: none;
+      border: 1px solid black;
+      font-size: 3.5vw;
+      text-transform: uppercase;
+      cursor: pointer;
+      align-self: center;
+      justify-self: center;
+
+      &:active {
+        background-color: $lab_darkGrey;
+        color: white;
       }
     }
   }
@@ -182,26 +199,129 @@ body {
       background-color: white;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 15% 5% 1fr;
-      padding: 7vw;
+      grid-template-rows: 10% 5% 1fr;
+      padding: 5vw;
     }
   }
-}
 
-.rec-carousel {
-  max-height: 100%;
-  max-width: 100%;
-}
+  // ======    COLLECTION   =========
 
-.rec-slider-container {
-  max-height: 100%;
-  max-width: 100%;
-}
+  &.collection {
+    height: 250px;
+    background-color: $lab_white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-.sc-gKAblj {
-  display: none;
-}
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $sansserif;
+      font-size: 5vw;
+      span {
+        text-transform: none;
+        font-size: 4vw;
+      }
+    }
 
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $sansserif;
+      font-size: 3vw;
+      margin-bottom: 4vw;
+    }
+
+    .button {
+      width: 40vw;
+      height: 12vw;
+      background: none;
+      border: 1px solid black;
+      font-size: 3.5vw;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:active {
+        background-color: $lab_darkGrey;
+        color: white;
+      }
+    }
+  }
+
+  // ======    CONTACT   =========
+
+  &.contact {
+    height: 240px;
+    background-color: $lab_grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      margin-top: 3vw;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $sansserif;
+      font-size: 4vw;
+      color: $lab_white;
+      span {
+        text-transform: none;
+        font-size: 4vw;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $sansserif;
+      font-size: 3vw;
+      margin-bottom: 4vw;
+    }
+
+    .social--media {
+      width: 80%;
+      height: 10vw;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+
+      img {
+        max-width: 70%;
+        max-height: 70%;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3vw;
+
+      a {
+        font-family: $sansserif;
+        color: blue;
+        // text-decoration: none;
+        font-size: 3vw;
+      }
+    }
+  }
+
+  .rec-carousel {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .rec-slider-container {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .sc-gKAblj {
+    display: none;
+  }
+}
 // ======    DRAWER   =========
 
 .side-drawer {

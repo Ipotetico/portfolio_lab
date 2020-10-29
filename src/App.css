@@ -175,8 +175,8 @@ body {
   background-color: #eeede9;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 1fr 15%;
-      grid-template-columns: 25% 1fr 15%;
+  -ms-grid-columns: 35% 1fr 15%;
+      grid-template-columns: 35% 1fr 15%;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
 }
@@ -303,13 +303,17 @@ body {
 .container.carousel {
   height: 100vw;
   background-color: #f0f1f1;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 20% 5% 1fr;
-      grid-template-rows: 20% 5% 1fr;
   margin-bottom: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container.carousel h2 {
@@ -328,24 +332,45 @@ body {
 }
 
 .container.carousel .four--steps {
+  margin-top: 6vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 300px;
-  max-height: 300px;
+  height: 50%;
+  max-height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f0f1f1;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  padding: 7vw;
+  padding: 4vw;
 }
 
 .container.carousel .four--steps .icon {
   max-width: 80%;
   max-height: 80%;
   cursor: pointer;
+}
+
+.container.carousel .button {
+  width: 70vw;
+  height: 12vw;
+  background: none;
+  border: 1px solid black;
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.container.carousel .button:active {
+  background-color: #3c3c3c;
+  color: white;
 }
 
 .container.help {
@@ -382,22 +407,151 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 15% 5% 1fr;
-      grid-template-rows: 15% 5% 1fr;
-  padding: 7vw;
+  -ms-grid-rows: 10% 5% 1fr;
+      grid-template-rows: 10% 5% 1fr;
+  padding: 5vw;
 }
 
-.rec-carousel {
+.container.collection {
+  height: 250px;
+  background-color: #f0f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container.collection h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 5vw;
+}
+
+.container.collection h2 span {
+  text-transform: none;
+  font-size: 4vw;
+}
+
+.container.collection h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3vw;
+  margin-bottom: 4vw;
+}
+
+.container.collection .button {
+  width: 40vw;
+  height: 12vw;
+  background: none;
+  border: 1px solid black;
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container.collection .button:active {
+  background-color: #3c3c3c;
+  color: white;
+}
+
+.container.contact {
+  height: 240px;
+  background-color: #737373;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container.contact h2 {
+  margin-top: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 4vw;
+  color: #f0f1f1;
+}
+
+.container.contact h2 span {
+  text-transform: none;
+  font-size: 4vw;
+}
+
+.container.contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3vw;
+  margin-bottom: 4vw;
+}
+
+.container.contact .social--media {
+  width: 80%;
+  height: 10vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.container.contact .social--media img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.container.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3vw;
+}
+
+.container.contact ul a {
+  font-family: "Open Sans", sans-serif;
+  color: blue;
+  font-size: 3vw;
+}
+
+.container .rec-carousel {
   max-height: 100%;
   max-width: 100%;
 }
 
-.rec-slider-container {
+.container .rec-slider-container {
   max-height: 100%;
   max-width: 100%;
 }
 
-.sc-gKAblj {
+.container .sc-gKAblj {
   display: none;
 }
 
