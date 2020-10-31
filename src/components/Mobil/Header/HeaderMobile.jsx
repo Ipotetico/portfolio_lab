@@ -1,18 +1,22 @@
 import React from "react";
-import bgd from "../img/misio_sam_mobile.png";
-import parzenica from "../img/parzenica.svg";
-import DrawerToggleButton from "./SideDrawer/SideDrawerButton";
+import DrawerToggleButton from "../SideDrawer/SideDrawerButton";
 
 const HeaderMobile = ({ func, state }) => {
   return (
     <>
       <header className="container desktop">
-        <img src={bgd} alt="" />
+        <img
+          src={process.env.PUBLIC_URL + "/img/misio_sam_mobile.png"}
+          alt="misio"
+        />
         <div className="box two--vertical">
           <h1>
             Zacznij <br /> pomagać!
           </h1>
-          <img src={parzenica} alt="" />
+          <img
+            src={process.env.PUBLIC_URL + "/img/parzenica.svg"}
+            alt="parzenica"
+          />
         </div>
         <DrawerToggleButton func={func} state={state} />
       </header>

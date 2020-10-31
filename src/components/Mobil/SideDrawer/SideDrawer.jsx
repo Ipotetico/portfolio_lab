@@ -13,11 +13,8 @@ const SideDrawer = ({ state }) => (
         <a href="/">Załóz konto</a>
       </li>
     </ul>
-    <div className="parzenica"></div>
+    <img src={process.env.PUBLIC_URL + "/img/parzenica.svg"} alt="" />
     <ul className="menu--list">
-      <li>
-        <a href="/">Start</a>
-      </li>
       <li>
         <a href="/">O co chodzi?</a>
       </li>

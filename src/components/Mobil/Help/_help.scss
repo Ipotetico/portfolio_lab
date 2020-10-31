@@ -1,0 +1,27 @@
+// ======    HELP   =========
+
+&.help {
+  height: 120vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $sansserif;
+    font-size: 5vw;
+    align-self: center;
+  }
+  .three--steps {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 5% 1fr;
+    padding: 5vw;
+  }
+}

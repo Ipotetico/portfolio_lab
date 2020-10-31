@@ -1,5 +1,4 @@
 import React from "react";
-import parzenica from "../img/parzenica.svg";
 
 const Collection = () => {
   return (
@@ -7,7 +6,10 @@ const Collection = () => {
       <div className="container collection">
         <h2>
           Chcesz oddać swoje rzeczy lub zorganizować zbiórkę lokalną?
-          <img src={parzenica} alt="" />
+          <img
+            src={process.env.PUBLIC_URL + "/img/parzenica.svg"}
+            alt="parzenica"
+          />
         </h2>
         <button className="button">Załóz konto</button>
       </div>

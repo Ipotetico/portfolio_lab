@@ -1,5 +1,4 @@
 import React from "react";
-import parzenica from "../img/parzenica.svg";
 
 const OpenAccount = () => {
   return (
@@ -9,7 +8,7 @@ const OpenAccount = () => {
         <h2>
           ODDAJ JE POTRZEBUJĄCYM <br />
           <span>- szybko i w zaufane ręce</span>
-          <img src={parzenica} alt="" />
+          <img src={process.env.PUBLIC_URL + "/img/parzenica.svg"} alt="" />
         </h2>
         <button className="button">Załóz konto</button>
       </div>

@@ -1,0 +1,19 @@
+@import "./reset";
+@import "./fonts";
+@import "./colors";
+@import "../Mobil/Account/account";
+@import "../Mobil/Collect/collect";
+@import "../Mobil/Contact/contact";
+@import "../Mobil/FourSteps/fourSteps";
+@import "../Mobil/Help/help";
+@import "../Mobil/SideDrawer/sideDrawer";
+@import "../Mobil/Header/header";
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #eeede9;
+  height: 100%;
+}

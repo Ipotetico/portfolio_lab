@@ -1,0 +1,60 @@
+// ======    DRAWER   =========
+
+.side-drawer {
+  height: 100%;
+  background-color: $lab_white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 85%;
+  box-shadow: 25px 0 15px rgba($color: #000000, $alpha: 0.3);
+  z-index: 1;
+  border-radius: 0 5vw 5vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+
+  .login--list {
+    a {
+      font-family: $sansserif;
+      color: $lab_darkGrey;
+      text-decoration: none;
+      font-size: 4vw;
+
+      &:hover {
+        border: 1px solid $lab_yellow;
+        padding: 4px 5px;
+      }
+    }
+  }
+
+  .menu--list {
+    font-size: 10vw;
+
+    a {
+      font-family: $sansserif;
+      color: $lab_darkGrey;
+      text-decoration: none;
+      font-size: 5vw;
+
+      &:hover {
+        border: 1px solid $lab_darkGrey;
+        padding: 4px 8px;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8vw 8vw;
+
+    li {
+      margin: 3vw;
+    }
+  }
+}

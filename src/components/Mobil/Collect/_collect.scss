@@ -1,0 +1,44 @@
+// ======    COLLECTION   =========
+
+&.collection {
+  height: 250px;
+  background-color: $lab_white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $sansserif;
+    font-size: 5vw;
+    span {
+      text-transform: none;
+      font-size: 4vw;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $sansserif;
+    font-size: 3vw;
+    margin-bottom: 4vw;
+  }
+
+  .button {
+    width: 40vw;
+    height: 12vw;
+    background: none;
+    border: 1px solid black;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:active {
+      background-color: $lab_darkGrey;
+      color: white;
+    }
+  }
+}

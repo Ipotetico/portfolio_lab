@@ -133,30 +133,6 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  width: 300px;
-  height: 900px;
-  background-color: black;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
-}
-
-.container .light {
-  width: 90%;
-  height: 90%;
-  background-color: #222222;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  border-radius: 50%;
-}
-
 html {
   height: 100%;
 }
@@ -578,15 +554,6 @@ body {
           align-items: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.side-drawer .parzenica {
-  width: 80%;
-  height: 7px;
-  background-image: url(../src/components/img/parzenica.svg);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .side-drawer .login--list a {
