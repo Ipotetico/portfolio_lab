@@ -1,6 +1,6 @@
 import React from "react";
 import { isMobileOnly, isTablet, isBrowser } from "react-device-detect";
-import "./scss/App.css";
+import "./css/App.css";
 import Mobile from "./Mobil/Mobile";
 import Tablet from "./Tablet/Tablet";
 import Desktop from "./Desktop/Desktop";
