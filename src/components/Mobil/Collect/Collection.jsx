@@ -1,6 +1,6 @@
 import React from "react";
 
-const Collection = () => {
+const Collection = ({ account }) => {
   return (
     <>
       <div className="container collection">
@@ -11,7 +11,9 @@ const Collection = () => {
             alt="parzenica"
           />
         </h2>
-        <button className="button">Załóz konto</button>
+        <button onClick={account} className="button">
+          Załóz konto
+        </button>
       </div>
     </>
   );

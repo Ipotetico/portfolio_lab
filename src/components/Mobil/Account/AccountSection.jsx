@@ -1,6 +1,6 @@
 import React from "react";
 
-const OpenAccount = () => {
+const OpenAccount = ({ account }) => {
   return (
     <>
       <div className="container account">
@@ -10,7 +10,9 @@ const OpenAccount = () => {
           <span>- szybko i w zaufane ręce</span>
           <img src={process.env.PUBLIC_URL + "/img/parzenica.svg"} alt="" />
         </h2>
-        <button className="button">Załóz konto</button>
+        <button onClick={account} className="button">
+          Załóz konto
+        </button>
       </div>
     </>
   );

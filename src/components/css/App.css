@@ -133,15 +133,6 @@ table {
   border-spacing: 0;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  background-color: #eeede9;
-  height: 100%;
-}
-
 .container {
   width: 100vw;
 }
@@ -223,16 +214,26 @@ body {
   outline: none;
 }
 
-.container.account {
-  height: 250px;
+.container .rec-carousel {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.container .rec-slider-container {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.container .sc-gKAblj {
+  display: none;
+}
+
+.container.help {
+  height: 120vw;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -241,39 +242,29 @@ body {
           justify-content: center;
 }
 
-.container.account h2 {
+.container.help h2 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  font-size: 6vw;
+  font-size: 5vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.container.account h2 span {
-  text-transform: none;
-  font-size: 4vw;
-}
-
-.container.account h3 {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  font-size: 3vw;
-  margin-bottom: 4vw;
-}
-
-.container.account .button {
-  width: 40vw;
-  height: 12vw;
-  background: none;
-  border: 1px solid black;
-  font-size: 3.5vw;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.container.account .button:active {
-  background-color: #3c3c3c;
-  color: white;
+.container.help .three--steps {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 10% 5% 1fr;
+      grid-template-rows: 10% 5% 1fr;
+  padding: 5vw;
 }
 
 .container.carousel {
@@ -349,12 +340,17 @@ body {
   color: white;
 }
 
-.container.help {
-  height: 120vw;
+.container.account {
+  width: 100%;
+  height: 250px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -363,29 +359,39 @@ body {
           justify-content: center;
 }
 
-.container.help h2 {
+.container.account h2 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  font-size: 5vw;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  font-size: 6vw;
 }
 
-.container.help .three--steps {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 10% 5% 1fr;
-      grid-template-rows: 10% 5% 1fr;
-  padding: 5vw;
+.container.account h2 span {
+  text-transform: none;
+  font-size: 4vw;
+}
+
+.container.account h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3vw;
+  margin-bottom: 4vw;
+}
+
+.button {
+  width: 40vw;
+  height: 12vw;
+  background: none;
+  border: 1px solid black;
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #3c3c3c;
+  color: white;
 }
 
 .container.collection {
@@ -517,20 +523,6 @@ body {
   font-size: 3vw;
 }
 
-.container .rec-carousel {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.container .rec-slider-container {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.container .sc-gKAblj {
-  display: none;
-}
-
 .side-drawer {
   height: 100%;
   background-color: #f0f1f1;
@@ -604,5 +596,239 @@ body {
 
 .side-drawer ul li {
   margin: 3vw;
+}
+
+.container.onas {
+  width: 100%;
+  height: 255px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.container.onas h2 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 6vw;
+}
+
+.container.onas h2 span {
+  position: relative;
+  text-transform: none;
+  font-size: 4vw;
+}
+
+.container.onas h3 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3vw;
+  margin-bottom: 4vw;
+}
+
+.container.onas p {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3vw;
+  width: 80%;
+  text-align: center;
+}
+
+.container.onas .people {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.2;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.container.onas .parzenica {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2vw;
+}
+
+.container.onas .signature {
+  position: relative;
+  width: 30%;
+  margin-top: 3vw;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #eeede9;
+  height: 100%;
+}
+
+.container--account--mobile {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-out;
+          animation: fadeIn 1s ease-out;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container--account--mobile h1 {
+  font-family: "Open Sans", sans-serif, sans-serif;
+  font-size: 10vw;
+}
+
+.container--account--mobile .login--field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80vw;
+  height: 70vw;
+  background-color: #f0f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6vw;
+  margin-top: 5vw;
+}
+
+.container--account--mobile .login--field p {
+  font-family: "Open Sans", sans-serif, sans-serif;
+  font-size: 4vw;
+}
+
+.container--account--mobile .login--field p.errorMsg {
+  font-size: 3vw;
+  color: crimson;
+}
+
+.container--account--mobile .login--field input {
+  font-size: 4vw;
+  color: #737373;
+  width: 100%;
+  height: 5vw;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.5px solid black;
+}
+
+.container--account--mobile .buttons--field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80vw;
+  height: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5vw;
+}
+
+.container--account--mobile .buttons--field p {
+  margin-top: 2vw;
+  color: #737373;
+  font-family: "Open Sans", sans-serif, sans-serif;
+  font-size: 3vw;
+}
+
+.container--account--mobile .buttons--field p span {
+  margin-left: 1vw;
+  color: #5e5322;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.container--account--mobile .buttons--field button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 3vw;
+  border: none;
+  background-color: transparent;
+  border: 0.5px solid black;
+  padding: 3vw 12vw;
+  font-size: 4vw;
+  font-weight: 200;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container--account--mobile .buttons--field button:hover {
+  border: 1px solid black;
+}
+
+.container--account--mobile .buttons--field button:active {
+  background-color: #3c3c3c;
+  color: #f0f1f1;
 }
 /*# sourceMappingURL=App.css.map */
