@@ -40,6 +40,7 @@ const ThirdStep_A = ({ handleSetStep }) => {
           <option value="11">wielkopolskie</option>
           <option value="11">zachodniopomorskie</option>
         </select>
+        //TODO zmiana values
       </div>
       <h3>Komu chcesz pomóc</h3>
       <form className="help--container">
