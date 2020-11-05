@@ -9,6 +9,9 @@
 @import "../Mobil/Contact/contact";
 @import "../Mobil/SideDrawer/sideDrawer";
 @import "../Mobil/Onas/onas";
+@import "../Mobil/GiveAway/giveAway";
+@import "../Mobil/GiveAway/checkList";
+@import "../Mobil/GiveAway/selectBox";
 
 html {
   height: 100%;
@@ -20,6 +23,10 @@ body {
 }
 
 .container--account--mobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
   background-color: white;
@@ -30,6 +37,7 @@ body {
   opacity: 1;
   animation: fadeIn 1s ease-out;
   transition: 1s;
+  z-index: 10;
 
   @keyframes fadeIn {
     0% {
@@ -48,7 +56,8 @@ body {
   .login--field {
     box-sizing: border-box;
     width: 80vw;
-    height: 70vw;
+    height: 300px;
+
     background-color: $lab_white;
     display: flex;
     flex-direction: column;

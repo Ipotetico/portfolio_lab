@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import fire from "../Registration_Login/firebase";
-import CreateAccount from "../Account/CreateAccount";
+import SignUp from "../Account/SignUp";
 
 const Registration = ({ handleSetUserToDrawer }) => {
   const [user, setUser] = useState("Jan Fasola");
@@ -80,7 +80,7 @@ const Registration = ({ handleSetUserToDrawer }) => {
 
   return (
     <>
-      <CreateAccount
+      <SignUp
         email={email}
         setEmail={setEmail}
         password={password}

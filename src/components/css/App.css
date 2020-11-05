@@ -379,17 +379,85 @@ table {
   margin-bottom: 4vw;
 }
 
-.button {
-  width: 40vw;
-  height: 12vw;
+.container.results {
+  height: 500px;
+}
+
+.container.results .results--circles {
+  width: 95%;
+  height: 35%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.container.results .results--circles .result {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 20%;
+      grid-template-rows: 1fr 20%;
+}
+
+.container.results .results--circles .result .circle {
+  width: 25vw;
+  height: 25vw;
+  border: 0.5vw solid #3c3c3c;
+  background-color: #f0f1f1;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container.results .results--circles .result .circle h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12vw;
+  color: #3c3c3c;
+}
+
+.container.results .button--field {
+  width: 90%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container.results .button--field .button {
+  width: 30%;
+  height: 50%;
   background: none;
   border: 1px solid black;
   font-size: 3.5vw;
   text-transform: uppercase;
+  font-size: 3vw;
   cursor: pointer;
 }
 
-.button:active {
+.container.results .button--field .button:active {
   background-color: #3c3c3c;
   color: white;
 }
@@ -600,7 +668,7 @@ table {
 
 .container.onas {
   width: 100%;
-  height: 255px;
+  height: 260px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,6 +684,7 @@ table {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 
 .container.onas h2 {
@@ -650,12 +719,18 @@ table {
 }
 
 .container.onas .people {
+  width: 100%;
   position: absolute;
-  max-width: 100%;
-  max-height: 100%;
+  overflow: hidden;
+  background-color: burlywood;
   opacity: 0.2;
   -webkit-filter: grayscale(50%);
           filter: grayscale(50%);
+}
+
+.container.onas .people img {
+  width: 100%;
+  height: auto;
 }
 
 .container.onas .parzenica {
@@ -670,6 +745,496 @@ table {
   margin-top: 3vw;
 }
 
+.container.give--away {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container.give--away h2 {
+  margin-top: 5vw;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 5vw;
+}
+
+.container.give--away h2 span {
+  position: relative;
+  text-transform: none;
+  font-size: 4vw;
+}
+
+.container.give--away h3 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3vw;
+  margin-bottom: 4vw;
+}
+
+.container.give--away p {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3vw;
+  width: 80%;
+  text-align: center;
+}
+
+.container.give--away .parzenica {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2vw;
+}
+
+.container.give--away .steps {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10vw;
+}
+
+.container.give--away .steps .circle {
+  width: 12vw;
+  height: 12vw;
+  border: 0.5vw solid #3c3c3c;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+.container.give--away .steps .circle.checked {
+  background-color: #fad648;
+}
+
+.container.give--away .info {
+  width: 90%;
+  height: 100px;
+  background-color: #fad648;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 1fr;
+      grid-template-columns: 25% 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.container.give--away .info .achtung {
+  width: 15vw;
+  height: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1vw solid #3c3c3c;
+  background-color: #737373;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15vw;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: flex-end;
+  border-radius: 50%;
+}
+
+.container.give--away .info span {
+  font-size: 5vw;
+  font-weight: 600;
+  margin-bottom: 3vw;
+}
+
+.container.give--away .info p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: left;
+}
+
+.container.give--away a {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 1vw;
+}
+
+.container .button {
+  width: 30vw;
+  height: 10vw;
+  background: none;
+  border: 1px solid black;
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  font-size: 3vw;
+  cursor: pointer;
+}
+
+.container .button:active {
+  background-color: #3c3c3c;
+  color: white;
+}
+
+.container.give--away .check--list {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 6vw 0;
+  width: 90%;
+  height: 400px;
+  background-color: #f0f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.5vw;
+}
+
+.container.give--away .check--list .group {
+  padding: 3vw;
+  margin: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.give--away .check--list .group input[type="checkbox"] {
+  display: none;
+}
+
+.container.give--away .check--list .group input[type="checkbox"]:checked + label::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.container.give--away .check--list .group label {
+  position: relative;
+  left: 12vw;
+  background-color: #f0f1f1;
+}
+
+.container.give--away .check--list .group label::before {
+  content: "";
+  background-color: #fad648;
+  width: 7vw;
+  height: 7vw;
+  position: absolute;
+  left: -12vw;
+  top: -2vw;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.container.give--away .check--list .group label::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: "";
+  border: 2px solid black;
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  left: -12vw;
+  top: -2vw;
+}
+
+.container.give--away .select--box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
+  height: 10vw;
+  margin: 6vw 0;
+  overflow: hidden;
+  line-height: 3;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.container.give--away .select--box::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1vw;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  margin-right: 3vw;
+}
+
+.container.give--away .select--box:hover::after {
+  color: #fad648;
+}
+
+.container.give--away select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: white;
+  background-image: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 3.5vw;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.container.give--away h3 {
+  font-size: 4.5vw;
+  margin-bottom: 3vw;
+  font-weight: 600;
+}
+
+.container.give--away h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.container .button--container {
+  width: 80%;
+  height: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .help--container {
+  width: 90%;
+  height: 55vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 40%;
+      grid-template-rows: 1fr 40%;
+  margin-bottom: 5vw;
+}
+
+.container .help--container .grid--for--buttons {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.7vw;
+  text-align: center;
+}
+
+.container .help--container .grid--for--buttons .group {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.container .help--container .grid--for--buttons .group label {
+  cursor: pointer;
+}
+
+.container .help--container .grid--for--buttons .group label span {
+  position: relative;
+  width: 25vw;
+  height: 7vw;
+  background-color: white;
+  padding: 2vw 1vw;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+
+.container .help--container .grid--for--buttons .group label input[type="checkbox"]:checked ~ span {
+  background-color: #fad648;
+}
+
+.container .help--container .optional {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.container .help--container .optional input[type="text"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 90%;
+  margin-top: 3vw;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+.container .fundations {
+  width: 90%;
+  height: 55vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 2vw;
+  margin-bottom: 5vw;
+}
+
+.container .fundations .fundation {
+  width: 90%;
+  height: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.container .fundations .fundation label {
+  cursor: pointer;
+}
+
+.container .fundations .fundation label span {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+
+.container .fundations .fundation label input[type="checkbox"]:checked ~ span {
+  background-color: #fad648;
+}
+
 html {
   height: 100%;
 }
@@ -680,6 +1245,11 @@ body {
 }
 
 .container--account--mobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
   background-color: white;
@@ -701,6 +1271,7 @@ body {
           animation: fadeIn 1s ease-out;
   -webkit-transition: 1s;
   transition: 1s;
+  z-index: 10;
 }
 
 @-webkit-keyframes fadeIn {
@@ -730,7 +1301,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 80vw;
-  height: 70vw;
+  height: 300px;
   background-color: #f0f1f1;
   display: -webkit-box;
   display: -ms-flexbox;

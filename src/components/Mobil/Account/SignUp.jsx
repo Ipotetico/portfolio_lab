@@ -1,6 +1,6 @@
 import React from "react";
 
-const CreateAccount = ({
+const SignUp = ({
   account,
 
   // ================
@@ -80,7 +80,9 @@ const CreateAccount = ({
             </>
           ) : (
             <>
-              <button onClick={handleSignUp}>Załóz konto</button>
+              <button className="btn" onClick={handleSignUp}>
+                Załóz konto
+              </button>
               <p>
                 Jeśli masz konto
                 <span onClick={() => setHasAccount(!hasAccount)}>
@@ -95,4 +97,4 @@ const CreateAccount = ({
   );
 };
 
-export default CreateAccount;
+export default SignUp;

@@ -30,18 +30,66 @@
       margin-bottom: 4vw;
     }
   }
-}
-.button {
-  width: 40vw;
-  height: 12vw;
-  background: none;
-  border: 1px solid black;
-  font-size: 3.5vw;
-  text-transform: uppercase;
-  cursor: pointer;
 
-  &:active {
-    background-color: $lab_darkGrey;
-    color: white;
+  &.results {
+    height: 500px;
+
+    .results--circles {
+      width: 95%;
+      height: 35%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+
+      .result {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 20%;
+
+        .circle {
+          width: 25vw;
+          height: 25vw;
+          border: 0.5vw solid $lab_darkGrey;
+          background-color: $lab_white;
+          border-radius: 50%;
+          align-self: center;
+          justify-self: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          h2 {
+            font-family: $sansserif;
+            font-weight: 600;
+            font-size: 12vw;
+            color: $lab_darkGrey;
+          }
+        }
+      }
+    }
+    .button--field {
+      width: 90%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .button {
+        width: 30%;
+        height: 50%;
+        background: none;
+        border: 1px solid black;
+        font-size: 3.5vw;
+        text-transform: uppercase;
+        font-size: 3vw;
+        cursor: pointer;
+
+        &:active {
+          background-color: $lab_darkGrey;
+          color: white;
+        }
+      }
+    }
   }
 }

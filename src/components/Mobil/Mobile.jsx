@@ -9,6 +9,7 @@ import SideDrawer from "./SideDrawer/SideDrawer";
 import Registration from "./Registration_Login/Registration";
 import Results from "./Results/Results";
 import Onas from "./Onas/Onas";
+import GiveAway from "./GiveAway/GiveAway";
 
 const Mobile = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -57,7 +58,9 @@ const Mobile = () => {
       ) : (
         <AccountSection account={handleCreateAccount} />
       )}
+      <Results />
       <FourSteps />
+      <GiveAway />
       <Help />
       <Collection account={handleCreateAccount} />
       <Onas />

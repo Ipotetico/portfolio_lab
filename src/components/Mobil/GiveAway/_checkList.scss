@@ -1,0 +1,60 @@
+.container {
+  &.give--away {
+    .check--list {
+      box-sizing: border-box;
+      margin: 6vw 0;
+      width: 90%;
+      height: 400px;
+      background-color: $lab_white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-family: $sansserif;
+      font-size: 3.5vw;
+
+      .group {
+        padding: 3vw;
+        margin: 3vw;
+        display: flex;
+        align-items: center;
+
+        input[type="checkbox"] {
+          display: none;
+
+          &:checked + label::before {
+            transform: scale(1);
+          }
+        }
+
+        label {
+          position: relative;
+          left: 12vw;
+          background-color: $lab_white;
+
+          &::before {
+            content: "";
+            background-color: $lab_yellow;
+            width: 7vw;
+            height: 7vw;
+            position: absolute;
+            left: -12vw;
+            top: -2vw;
+            transform: scale(0);
+            transition: all 0.4s;
+          }
+
+          &::after {
+            box-sizing: border-box;
+            content: "";
+            border: 2px solid black;
+            position: absolute;
+            width: 7vw;
+            height: 7vw;
+            left: -12vw;
+            top: -2vw;
+          }
+        }
+      }
+    }
+  }
+}

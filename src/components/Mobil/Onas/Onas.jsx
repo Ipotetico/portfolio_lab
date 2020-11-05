@@ -3,11 +3,9 @@ import React from "react";
 const Onas = () => {
   return (
     <div className="container onas">
-      <img
-        className="people"
-        src={process.env.PUBLIC_URL + "/img/People.jpg"}
-        alt=""
-      />
+      <div className="people">
+        <img src={process.env.PUBLIC_URL + "/img/People.jpg"} alt="" />
+      </div>
       <h2>o nas</h2>
       <img
         className="parzenica"
