@@ -1,16 +1,15 @@
 import React from "react";
 import Checkbox from "./Checkbox";
+import Info from "./Info";
 
 const FirstStep = ({ handleSetStep }) => {
   return (
     <>
-      <div className="info">
-        <div className="achtung">!</div>
-        <p>
-          <span>WAŻNE!</span> <br /> Uzupełnij szczegóły dotyczące Twoich
-          rzeczy. Dzięki temu będziemy wiedzieć komu najlepiej je przekazać.
-        </p>
-      </div>
+      <Info
+        span="WAŻNE!"
+        info="Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzieć komu najlepiej je przekazać."
+      />
+
       <div className="check--list">
         <Checkbox id="clothes" text="ubrania do dalszego użytku" />
         <Checkbox id="rugs" text="ubrania do wyrzucenia" />

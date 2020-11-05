@@ -1,4 +1,7 @@
 import React from "react";
+import BtnFwrBwd from "./BtnFwdBwd";
+import Info from "./Info";
+import Parzenica from "./Parzenica";
 
 const SecondStep = ({ handleSetStep }) => {
   return (
@@ -6,19 +9,15 @@ const SecondStep = ({ handleSetStep }) => {
       <h3>
         Podaj liczbę 60 l worków, <br /> w które spakowałeś/aś rzeczy
       </h3>
-      <img src={process.env.PUBLIC_URL + "/img/parzenica.svg"} alt="" />
-      <div className="info">
-        <div className="achtung">!</div>
-        <p>
-          <span>WAŻNE!</span> <br />
-          Wszystkie rzeczy do oddania zapakuj w 60 l worki. Dokładną instrukcję
-          jak poprawnie spakować rzeczy znajdziesz
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            TUTAJ.
-          </a>
-        </p>
-      </div>
-      <img src={process.env.PUBLIC_URL + "/img/parzenica.svg"} alt="" />
+      <Parzenica />
+      <Info
+        span="WAŻNE!"
+        info="Wszystkie rzeczy do oddania zapakuj w 60 l worki. Dokładną instrukcję
+          jak poprawnie spakować rzeczy znajdziesz"
+        link=" TUTAJ."
+      />
+
+      <Parzenica />
       <h4>Liczba 60 l worków:</h4>
       <div className="select--box">
         <select name="bag" id="bag">
@@ -38,20 +37,7 @@ const SecondStep = ({ handleSetStep }) => {
           <option value="11"> {">"}10 </option>
         </select>
       </div>
-      <div className="button--container">
-        <button
-          onClick={() => handleSetStep((prevState) => prevState - 1)}
-          className="button"
-        >
-          cofnij
-        </button>
-        <button
-          onClick={() => handleSetStep((prevState) => prevState + 1)}
-          className="button"
-        >
-          dalej
-        </button>
-      </div>
+      <BtnFwrBwd handleSetStep={handleSetStep} />
     </>
   );
 };
