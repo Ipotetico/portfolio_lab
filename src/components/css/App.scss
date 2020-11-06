@@ -20,118 +20,293 @@ html {
 body {
   background-color: #eeede9;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.container--account--mobile {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
+.btn {
+  align-self: center;
+  justify-self: center;
+  width: 15vw;
+  height: 6vw;
+  background: none;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $sansserif;
+  font-weight: 300;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  cursor: pointer;
+  transform: scale(1);
+
+  &:hover {
+    background-color: $lab_yellow;
+    transform: scale(1.02);
+    box-shadow: 0 0.5vw 1vw rgba(black, 0.5);
+  }
+
+  &:active {
+    background-color: $lab_darkGrey;
+    color: $lab_yellow;
+  }
+}
+
+.datas {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    transform: scale(1);
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0.5vw 0.2vw rgba(black, 0.8));
+    }
+  }
+}
+
+.headline {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  opacity: 1;
-  animation: fadeIn 1s ease-out;
-  transition: 1s;
-  z-index: 10;
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  font-family: $sansserif;
 
   h1 {
-    font-family: $sansserif, sans-serif;
-    font-size: 10vw;
+    font-size: 2vw;
   }
 
-  .login--field {
-    box-sizing: border-box;
-    width: 80vw;
-    height: 300px;
-
-    background-color: $lab_white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 6vw;
-    margin-top: 5vw;
-
-    p {
-      font-family: $sansserif, sans-serif;
-      font-size: 4vw;
-
-      &.errorMsg {
-        font-size: 3vw;
-        color: crimson;
-      }
-    }
-
-    input {
-      font-size: 4vw;
-      color: $lab_grey;
-      width: 100%;
-      height: 5vw;
-      appearance: none;
-      background: none;
-      border: none;
-      outline: none;
-      border-bottom: 0.5px solid black;
-    }
+  h3 {
+    font-size: 1vw;
   }
+  img {
+    width: 100%;
+    max-width: 80%;
+  }
+}
 
-  .buttons--field {
-    box-sizing: border-box;
-    width: 80vw;
-    height: 40vw;
+.desktop--main {
+  width: 100%;
+  height: 100%;
+
+  .desktop--desktop {
+    width: 100vw;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5vw;
+    background-color: #ffffff;
+    position: relative;
 
-    p {
-      margin-top: 2vw;
-      color: $lab_grey;
-      font-family: $sansserif, sans-serif;
-      font-size: 3vw;
+    .desktop--picture {
+      height: 100%;
+      max-height: 100%;
+      position: absolute;
+      transform: translateX(-70%);
+    }
 
-      span {
-        margin-left: 1vw;
-        color: $lab_brown;
-        cursor: pointer;
-        text-decoration: underline;
+    .desktop--container {
+      width: 70%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .header--container {
+        width: 65%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 1fr;
+
+        nav {
+          width: 100%;
+          height: 100%;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: 1fr 1fr;
+
+          .menu {
+            font-family: $sansserif;
+            color: $lab_darkGrey;
+            text-decoration: none;
+            align-self: center;
+            justify-self: center;
+
+            &.petite {
+              font-size: 0.5vw;
+            }
+            &.grande {
+              font-size: 0.7vw;
+            }
+          }
+        }
+        .center--container {
+          width: 100%;
+          height: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          font-family: $sansserif;
+
+          .buttons--container {
+            align-self: center;
+            justify-self: center;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+          }
+        }
       }
     }
 
-    button {
+    // =====   DATA   =====
+  }
+
+  .data--container {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    .data--picture {
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+    }
+  }
+}
+
+// =====   FOUR STEPS   =====
+.center--container {
+  &.four--steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 8vw;
+    background-color: white;
+
+    .btn {
       align-self: center;
       justify-self: center;
-      margin: 3vw;
-      border: none;
-      background-color: transparent;
-      border: 0.5px solid black;
-      padding: 3vw 12vw;
-      font-size: 4vw;
-      font-weight: 200;
-      cursor: pointer;
-      transition: 0.2s;
+    }
 
-      &:hover {
-        border: 1px solid black;
+    img {
+      width: 30%;
+      max-width: 40%;
+    }
+
+    h1 {
+      font-family: $sansserif;
+      text-align: center;
+      font-size: 1.5vw;
+    }
+  }
+}
+
+.center--container {
+  &.graphics {
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $lab_white;
+
+    .datas {
+      width: 60%;
+      height: 100%;
+      max-height: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      position: relative;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+.center--container {
+  &.about--us {
+    width: 100vw;
+    height: 17vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $lab_white;
+
+    .container--for--two {
+      width: 60%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+
+      .text {
+        width: 70%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 1fr 40%;
+        font-family: $sansserif;
+        align-self: center;
+        justify-self: center;
+
+        p {
+          text-align: center;
+          font-size: 0.8vw;
+          line-height: 1vw;
+        }
+
+        .signature {
+          max-height: 100%;
+          justify-self: flex-end;
+        }
       }
 
-      &:active {
-        background-color: $lab_darkGrey;
-        color: $lab_white;
+      .fota {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
       }
     }
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import Parzenica from "../GiveAway/Parzenica";
 import DrawerToggleButton from "../SideDrawer/SideDrawerButton";
 
 const HeaderMobile = ({ func, state }) => {
@@ -13,10 +14,7 @@ const HeaderMobile = ({ func, state }) => {
           <h1>
             Zacznij <br /> pomagać!
           </h1>
-          <img
-            src={process.env.PUBLIC_URL + "/img/parzenica.svg"}
-            alt="parzenica"
-          />
+          <Parzenica />
         </div>
         <DrawerToggleButton func={func} state={state} />
       </header>
