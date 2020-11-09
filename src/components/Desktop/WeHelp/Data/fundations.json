@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "name": "Dbam o Zdrowie",
+    "goal": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+    "need": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+  },
+  {
+    "id": 1,
+    "name": "Dla dzieci",
+    "goal": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+    "need": "ubrania, meble, zabawki"
+  },
+  {
+    "id": 2,
+    "name": "Bez domu”",
+    "goal": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+    "need": "ubrania, jedzenie, ciepłe koce"
+  },
+  {
+    "id": 3,
+    "name": "Hospicyjna”",
+    "goal": "Pomagamy Przywrócić Uśmiech Dzieciom w Hospicjum.",
+    "need": "ubrania, jedzenie, ciepłe koce"
+  },
+  {
+    "id": 4,
+    "name": "Dziecięce Marzenia”",
+    "goal": "Prowadzi środowiskowe świetlice integracyjne oraz pracownię informatyczną, dofinansowywuje leczenie i rehabilitację dzieci",
+    "need": "ubrania, jedzenie, ciepłe koce"
+  },
+  {
+    "id": 5,
+    "name": "Lux Veritatis”",
+    "goal": "Realizator geologicznych prac poszukiwawczych w Toruniu (tzw. geotermia), współwłaściciel marki usług telefonicznych",
+    "need": "ubrania, jedzenie, ciepłe koce"
+  }
+]
