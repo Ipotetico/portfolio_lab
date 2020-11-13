@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "../Header/Button";
 
-const GiveAway = () => {
+const GiveAway = ({ func }) => {
   return (
     <div className="center--container four--steps">
-      <Button text="oddaj rzeczy" />
+      <Button func={func} text="oddaj rzeczy" />
     </div>
   );
 };

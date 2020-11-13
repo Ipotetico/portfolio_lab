@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Fundation from "./Fundation";
-import fundations from "../../Data/json/fundations.json";
+import ngos from "../../Data/json/collects.json";
 import Pagination from "./Pagination";
 
-const WeHelpFundations = () => {
+const WeHelpCollections = () => {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(3);
 
   useEffect(() => {
-    setPosts([...fundations]);
+    setPosts([...ngos]);
   }, []);
 
   const paginate = (pageNumber) => {
@@ -21,14 +21,14 @@ const WeHelpFundations = () => {
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-
+  console.log(`posts: ${posts}`);
   return (
     <>
       <div className="center--container fundations--container">
-        {fundations.slice(indexOfFirstPost, indexOfLastPost).map((el) => {
+        {ngos.slice(indexOfFirstPost, indexOfLastPost).map((el) => {
           return (
             <Fundation
-              organization="Fundacja"
+              organization="Zbiórka"
               key={el.id}
               name={el.name}
               goal={el.goal}
@@ -47,4 +47,4 @@ const WeHelpFundations = () => {
   );
 };
 
-export default WeHelpFundations;
+export default WeHelpCollections;

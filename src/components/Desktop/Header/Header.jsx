@@ -1,8 +1,11 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Button from "./Button";
 import Headline from "./Headline";
+import MenuItem from "./MenuItem";
 
-const Header = () => {
+const Header = ({ func }) => {
   return (
     <>
       <div className="desktop--desktop">
@@ -17,28 +20,33 @@ const Header = () => {
               <div className=""></div>
               <div className=""></div>
               <div className=""></div>
-              <a className="menu petite" href="">
-                Zaloguj
-              </a>
-              <a className="menu petite" href="">
-                Załóż konto
-              </a>
-              <a className="menu grande" href="">
-                Start
-              </a>
-              <a className="menu grande" href="">
-                O co chodzi?
-              </a>
-              <a className="menu grande" href="">
-                O nas
-              </a>
-              <a className="menu grande" href="">
-                Fundacja i organizacje
-              </a>
-              <a className="menu grande" href="">
-                Kontakt
-              </a>
+
+              <MenuItem name="Zaloguj" clasa="menu petite" linkTo="#" />
+              <MenuItem
+                func={func}
+                name="Załóż konto"
+                clasa="menu petite"
+                linkTo="#"
+              />
+              <Router>
+                <Link className="menu grande" smooth to="/">
+                  Start
+                </Link>
+                <Link className="menu grande" smooth to="/">
+                  O co chodzi?
+                </Link>
+                <Link className="menu grande" smooth to="/pathLink#onas">
+                  O nas
+                </Link>
+                <Link className="menu grande" smooth to="/pathLink#help">
+                  Fundacje i organizacje
+                </Link>
+                <Link className="menu grande" smooth to="/pathLink#contact">
+                  Kontakt
+                </Link>
+              </Router>
             </nav>
+
             <div className="center--container">
               <Headline
                 headline={
@@ -49,7 +57,7 @@ const Header = () => {
                 }
               />
               <div className="buttons--container">
-                <Button text="oddaj rzeczy" />
+                <Button func={func} text="oddaj rzeczy" />
                 <Button text="zorganizuj zbiórkę" />
               </div>
             </div>

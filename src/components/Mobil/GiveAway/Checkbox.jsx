@@ -4,7 +4,9 @@ const Checkbox = ({ id, text }) => {
   return (
     <form className="group">
       <input type="checkbox" id={id} />
-      <label htmlFor={id}>{text}</label>
+      <label htmlFor={id}>
+        <p>{text}</p>
+      </label>
     </form>
   );
 };

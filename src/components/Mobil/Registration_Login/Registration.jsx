@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import fire from "../Registration_Login/firebase";
+import fire from "../../Data/UniversalComponents/firebase";
 import SignUp from "../Account/SignUp";
 
 const Registration = ({ handleSetUserToDrawer }) => {
