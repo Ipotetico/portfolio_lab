@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const SelectBox = () => {
+const SelectBox = ({ handleStepTwo }) => {
   const [quant, setQuant] = useState("— wybierz —");
 
   let numbers = [];
@@ -10,8 +10,16 @@ const SelectBox = () => {
   }
 
   const handleQuant = (e) => {
+    setQuant("");
     setQuant(e.target.innerText);
   };
+
+  useEffect(() => {
+    handleStepTwo(quant);
+  }, [quant]);
+
+  console.log("quant", quant);
+  console.log("handle stap two", handleStepTwo);
 
   return (
     <div className="dropdown">
@@ -21,11 +29,11 @@ const SelectBox = () => {
       </div>
       <ul className="dropdown--list">
         {numbers.map((el, index) => (
-          <li onClick={handleQuant} key={index} value={el} className="item">
+          <li onClick={handleQuant} key={index} name={el} className="item">
             {el}
           </li>
         ))}
-        <li onClick={handleQuant} value="ponad" className="item">
+        <li onClick={handleQuant} name="ponad" className="item">
           &gt;10
         </li>
       </ul>

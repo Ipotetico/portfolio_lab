@@ -1,66 +1,82 @@
 [
   {
     "id": 1,
-    "woj": "dolnośląskie"
+    "woj": "dolnośląskie",
+    "dop": "województwa dolnośląskiego"
   },
   {
     "id": 2,
-    "woj": "kujawsko-pomorskie"
+    "woj": "kujawsko-pomorskie",
+    "dop": "województwa kujawsko-pomorskiego"
   },
   {
     "id": 3,
-    "woj": "lubelskie"
+    "woj": "lubelskie",
+    "dop": "województwa lubelskiego"
   },
   {
     "id": 4,
-    "woj": "lubuskie"
+    "woj": "lubuskie",
+    "dop": "województwa lubuskiego"
   },
   {
     "id": 5,
-    "woj": "łódzkie"
+    "woj": "łódzkie",
+    "dop": "województwa łódzkiego"
   },
   {
     "id": 6,
-    "woj": "małopolskie"
+    "woj": "małopolskie",
+    "dop": "województwa małopolskiego"
   },
   {
     "id": 7,
-    "woj": "mazowieckie"
+    "woj": "mazowieckie",
+    "dop": "województwa mazowieckiego"
   },
   {
     "id": 8,
-    "woj": "opolskie"
+    "woj": "opolskie",
+    "dop": "województwa opolskiego"
   },
   {
     "id": 9,
-    "woj": "podkarpackie"
+    "woj": "podkarpackie",
+    "dop": "województwa podkarpackiego"
   },
   {
     "id": 10,
-    "woj": "podlaskie"
+    "woj": "podlaskie",
+    "dop": "województwa podlaskiego"
   },
   {
     "id": 11,
-    "woj": "pomorskie"
+    "woj": "pomorskie",
+    "dop": "województwa pomorskiego"
   },
   {
     "id": 12,
-    "woj": "śląskie"
+    "woj": "śląskie",
+    "dop": "województwa śląskiego"
   },
   {
     "id": 13,
-    "woj": "świętokrzyskie"
+    "woj": "świętokrzyskie",
+    "dop": "województwa świętokrzyskiego"
   },
   {
     "id": 14,
-    "woj": "warmińsko-mazurskie"
+    "woj": "warmińsko-mazurskie",
+    "dop": "województwa warmińsko-mazurskiego"
   },
   {
     "id": 15,
-    "woj": "wielkopolskie"
+    "woj": "wielkopolskie",
+    "dop": "województwa wielkopolskiego"
   },
   {
     "id": 16,
-    "woj": "zachodniopomorskie"
+    "woj": "zachodniopomorskie",
+    "dop": "województwa zachodniopomorskiego"
   }
 ]

@@ -4,9 +4,9 @@ import fire from "../../Data/UniversalComponents/firebase";
 import ButtonSubmit from "./ButtonSubmit";
 
 const ContactUs = () => {
-  const [name, setName] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [message, setMessage] = useState(null);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [disabled, setDisabled] = useState(false);
 
   // useEffect(() => {
@@ -20,19 +20,19 @@ const ContactUs = () => {
     console.log(name, "name");
     fire
       .firestore()
-      .collection("contacts")
+      .collection("messages")
       .add({
-        name: name,
-        email: email,
-        message: message,
+        "name": name,
+        "email": email,
+        "message": message,
       })
       .then(() => {
-        // alert("Message has been submited");
+        console.log(name, email, message);
+        //handleReset();
       })
       .catch((error) => {
         // alert(error.message);
       });
-    handleReset();
   };
 
   const handleReset = () => {
@@ -44,17 +44,18 @@ const ContactUs = () => {
   const handleName = (e) => {
     e.preventDefault();
     console.log(e.target.value);
-    setName(() => e.target.value);
+    console.log(name);
+    setName(e.target.value);
   };
 
   const handleEmail = (e) => {
     e.preventDefault();
-    setEmail(() => e.target.value);
+    setEmail(e.target.value);
   };
 
   const handleMessage = (e) => {
     e.preventDefault();
-    setMessage(() => e.target.value);
+    setMessage(e.target.value);
   };
 
   return (
@@ -78,6 +79,7 @@ const ContactUs = () => {
                     name="name"
                     id="name"
                     onChange={(e) => handleName(e)}
+                    value={name}
                   />
                 </label>
                 <label htmlFor="email">
@@ -87,6 +89,7 @@ const ContactUs = () => {
                     name="email"
                     id="email"
                     onChange={(e) => handleEmail(e)}
+                    value={email}
                   />
                 </label>
               </div>
@@ -99,6 +102,7 @@ const ContactUs = () => {
                     cols="30"
                     rows="10"
                     onChange={(e) => handleMessage(e)}
+                    value={message}
                   ></textarea>
                 </label>
               </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const ButtonSubmit = ({ text, disabled, reset }) => {
   return (
-    <button onClick={reset} type="submit" className="btn" disabled={disabled}>
+    <button type="submit" className="btn" disabled={disabled}>
       {text}
     </button>
   );

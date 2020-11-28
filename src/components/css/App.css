@@ -1874,7 +1874,8 @@ body {
   font-size: 1.5vw;
 }
 
-.center--container.four--steps p {
+.center--container.four--steps p,
+.center--container.four--steps span {
   font-size: 0.8vw;
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -1906,7 +1907,8 @@ body {
   font-size: 1.5vw;
 }
 
-.center--container.fundations--container p {
+.center--container.fundations--container p,
+.center--container.fundations--container span {
   font-size: 0.8vw;
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -2086,7 +2088,8 @@ body {
       justify-self: center;
 }
 
-.center--container.about--us .container--for--two .text p {
+.center--container.about--us .container--for--two .text p,
+.center--container.about--us .container--for--two .text span {
   text-align: center;
   font-size: 0.8vw;
   line-height: 1vw;
@@ -2222,7 +2225,8 @@ body {
   font-size: 0.5vw;
 }
 
-.center--container.contact--us .fota .contact--form .form p {
+.center--container.contact--us .fota .contact--form .form p,
+.center--container.contact--us .fota .contact--form .form span {
   margin-bottom: 0.2vw;
   z-index: 10;
 }
@@ -2333,7 +2337,8 @@ body {
   padding: 3vw 2vw;
 }
 
-.modal---desktop .container p {
+.modal---desktop .container p,
+.modal---desktop .container span {
   margin-bottom: 0.2vw;
   z-index: 10;
 }
@@ -2420,7 +2425,8 @@ body {
   transition: all 0.5s;
 }
 
-.desktop--container .input--container .group p {
+.desktop--container .input--container .group p,
+.desktop--container .input--container .group span {
   margin-left: 2vw;
 }
 
@@ -2577,5 +2583,96 @@ body {
 .input--headline--.h2 {
   font-size: 1vw;
   margin-bottom: 1vw;
+}
+
+.input--container .container--address {
+  width: 100%;
+  height: 12vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 2vw;
+  font-family: "Open Sans", sans-serif, sans-serif;
+}
+
+.container--address--single {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container--address--single h1 {
+  font-weight: 800;
+  font-size: 3vw;
+  text-align: right;
+}
+
+.container--address--single h2 {
+  font-weight: 800;
+  font-size: 3vw;
+  text-align: right;
+}
+
+.container--address--single label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: right;
+}
+
+.container--address--single label span {
+  font-size: 0.5vw;
+}
+
+.container--address--single label input,
+.container--address--single label textarea {
+  width: 80%;
+  background: none;
+  border: 0.5px solid #737373;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 0.5vw;
+  padding: 0.2vw;
+}
+
+.boxing {
+  width: 100%;
+  height: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.boxing .image {
+  max-height: 2vw;
+  margin-right: 1vw;
 }
 /*# sourceMappingURL=App.css.map */

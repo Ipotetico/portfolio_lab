@@ -1,11 +1,16 @@
 import React from "react";
 
-const Checkbox = ({ id, text }) => {
+const Checkbox = ({ id, text, name, handleStepOne }) => {
   return (
     <form className="group">
-      <input type="checkbox" id={id} />
+      <input
+        onChange={(e) => handleStepOne(e)}
+        type="checkbox"
+        id={id}
+        name={name}
+      />
       <label htmlFor={id}>
-        <p>{text}</p>
+        <span>{text}</span>
       </label>
     </form>
   );

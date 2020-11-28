@@ -40,6 +40,14 @@ const DataAfterLogin = ({ formula }) => {
         </p>
       );
     }
+
+    if (formula === 4) {
+      setInfo(
+        <p>
+          Podaj adres oraz termin odbioru rzeczy.
+        </p>
+      );
+    }
   }, [formula]);
 
   return (

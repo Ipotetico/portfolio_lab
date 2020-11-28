@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Swal from "sweetalert2";
 import AboutUs from "./AboutUs/AboutUs";
-import DataAfterLogin from "./AfterLogin/Datas/DataAfterLogin";
 import HeaderFourSteps from "../Desktop/AfterLogin/HeaderAfterLogin/HeaderFourSteps";
 import StuffForm from "./AfterLogin/StuffForm";
 import ContactUs from "./Contact/ContactUs";
@@ -42,21 +42,21 @@ const Desktop = () => {
           {isLogged ? (
             <StuffForm />
           ) : (
-            <div>
-              <FourSteps />
-              <FourStepsGraphics />
-              <div id="onas">
-                <GiveAway func={handleShowSignup} />
-              </div>
-              <AboutUs />
+              <div>
+                <FourSteps />
+                <FourStepsGraphics />
+                <div id="onas">
+                  <GiveAway func={handleShowSignup} />
+                </div>
+                <AboutUs />
 
-              <div id="help">
-                <WeHelp />
+                <div id="help">
+                  <WeHelp />
+                </div>
+                <WeHelpButtons handleShowData={handleShowData} />
+                <WeHelpContainer showData={showData} />
               </div>
-              <WeHelpButtons handleShowData={handleShowData} />
-              <WeHelpContainer showData={showData} />
-            </div>
-          )}
+            )}
           <div id="contact">
             <ContactUs />
           </div>
